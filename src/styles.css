@@ -8,9 +8,9 @@ body {
 }
 
 input {
-    background-color: white;
+    background: #eee;
     border-radius: 5px;
-    border: 1px solid rgb(97, 32, 158);
+    border: 2px solid rgb(97, 32, 158);
     color: black;
     font-size: 1.2rem;
     outline: none;
@@ -60,4 +60,29 @@ h3 {
 
 .card img {
     width: 100%;
+}
+
+.search {
+    display: flex;
+    flex-direction: row;
+    gap: 1.5rem;
+}
+
+.search button {
+    border-radius: 10px;
+    border: 2px solid rgb(97, 32, 158);
+    font-size: 1rem;
+}
+
+.search button:hover {
+    background: #ddd;
+}
+
+.browser {
+    width: 75em;
+    box-sizing: border-box;
+}
+
+.browser:focus {
+    background: #fff;
 }

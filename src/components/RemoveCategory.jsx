@@ -1,3 +1,3 @@
 export const RemoveCategory = () => {
-    return <div>RemoveCategory</div>;
+    return <button>Remove last search</button>;
 };

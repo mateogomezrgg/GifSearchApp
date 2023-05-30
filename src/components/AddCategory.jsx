@@ -10,9 +10,10 @@ export const AddCategory = ({ onNewCategory }) => {
 
     const onSubmit = (event) => {
         event.preventDefault();
-        if (inputValue.trim().length <= 1) return;
+        const newInputValue = inputValue.trim();
+        if (newInputValue.length <= 1) return;
         // setCategories((categories) => [inputValue, ...categories]);
-        onNewCategory(inputValue.trim());
+        onNewCategory(newInputValue);
         setInputValue("");
     };
     return (
@@ -22,6 +23,7 @@ export const AddCategory = ({ onNewCategory }) => {
                 placeholder="Buscar gifs"
                 value={inputValue}
                 onChange={onInputChange}
+                className="browser"
             />
         </form>
     );

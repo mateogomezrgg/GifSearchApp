@@ -1,6 +1,5 @@
 import { useState } from "react";
 import { AddCategory, GifGrid } from "./components";
-import { RemoveCategory } from "./components/RemoveCategory";
 import { RemoveAllCategories } from "./components/RemoveAllCategories";
 
 export const GifExpertApp = () => {
@@ -11,12 +10,16 @@ export const GifExpertApp = () => {
         setCategories((cat) => [newCategory, ...cat]);
     };
 
+    // const onRemoveCategory = (delCategory) => {
+    //     setCategories((existingCategory) => {
+    //         return existingCategory.filter((item) => item !== delCategory);
+    //     });
+    // };
     return (
         <>
             <h1>Search your Gifs</h1>
             <div className="search">
                 <AddCategory onNewCategory={(event) => onAddCategory(event)} />
-                <RemoveCategory />
                 <RemoveAllCategories />
             </div>
             {categories.map((category) => (

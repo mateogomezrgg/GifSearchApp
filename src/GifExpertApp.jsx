@@ -15,6 +15,7 @@ export const GifExpertApp = () => {
     //         return existingCategory.filter((item) => item !== delCategory);
     //     });
     // };
+
     return (
         <>
             <h1>Search your Gifs</h1>

@@ -1,3 +1,3 @@
-export const RemoveAllCategories = () => {
-    return <button>Remove all searchs</button>;
+export const RemoveAllCategories = ({ onRemoveAllCategories }) => {
+  return <button onClick={onRemoveAllCategories}>Remove all searchs</button>;
 };

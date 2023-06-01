@@ -1,9 +1,3 @@
-export const RemoveCategory = (setCategories) => {
-    const onRemoveCategory = (delCategory) => {
-        setCategories((existingCategory) => {
-            return existingCategory.filter((item) => item !== delCategory);
-        });
-    };
-
-    return <button onClick={onRemoveCategory}>Remove this search</button>;
+export const RemoveCategory = ({ handleRemoveGif }) => {
+  return <button onClick={handleRemoveGif}>Remove this search</button>;
 };

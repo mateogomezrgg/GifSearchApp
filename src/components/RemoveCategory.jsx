@@ -1,3 +1,3 @@
 export const RemoveCategory = ({ handleRemoveGif }) => {
-  return <button onClick={handleRemoveGif}>Remove this search</button>;
+  return <button onClick={handleRemoveGif}>Remove this search 🗑</button>;
 };
